@@ -176,7 +176,7 @@ dataset <- dplyr::rename(dataset, bot_example = q12,
                               ScenarioChoice2_Autonomy = sc2_answer,
                               Gender = gender,
                               Age = age)
-write_csv(dataset, "thesis/GLM Dataset.csv")
+write_csv(dataset, "dataset/Latest Dataset.csv")
 
 ```
 

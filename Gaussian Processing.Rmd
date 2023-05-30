@@ -31,7 +31,7 @@ options(mc.cores = parallel::detectCores())
 ```{r}
 
 
-df <- read.csv("thesis/GLM Dataset.csv")
+df <- read.csv("dataset/Latest Dataset.csv")
 
 # transform ordinal variables to numeric
 df$YrsExperience <- as.numeric(factor(df$YrsExperience, levels = c("<1 year", "1-3 years", "3-5 years", ">5 years")))
@@ -64,7 +64,7 @@ df$ScenarioChoice4_Persona <- as.numeric(df$ScenarioChoice4_Persona)
 
 ```
 
-# Model Descriptors 
+# Model Descriptors
 
 ```{r}
 m1_sc1 = 'ScenarioChoice1_Autonomy ~ GitHubActivity'
