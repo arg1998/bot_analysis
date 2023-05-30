@@ -1,0 +1,229 @@
+# schema for OSS Bots dataset (CSV file)
+demographics:
+  num_questions: 17
+  1:
+    column: "q1" 
+    response_type: single-choice
+    values: [1, 2]
+    prompt: "Have you ever done programming before?"
+    1: "Yes"
+    2: "No"
+    purpose: screening
+    correct_answer: 1
+  2:
+    column: "q2"
+    response_type: single-choice
+    values: [1, 2, 3, 4]
+    prompt: "What is the purpose of the “break” statement and where is it used?"
+    1: "Outside the “if-else” statements to undo the previous condition"
+    2: "Inside nested loops to terminate the entire loop stack immediately"
+    3: "Inside a function parameter to break down array arguments into individual variable"
+    4: "Inside of a loop to stop the current loop from iterating"
+    purpose: screening
+    correct_answer: 4
+  3:
+    column: "q3"
+    response_type: multi-choice
+    values: null # hyphen separated integer values as string, could be empty 
+    prompt: "Select all the parameters of the function below."
+    purpose: screening
+    correct_answer: "2-5-6"
+  4:
+    column: "q4"
+    response_type: multi-choice
+    values: [1, 2, 3, 4]
+    prompt: "What could be the reason for a compiler incorrectly outputting a negative number while multiplying two very large positive numbers?"
+    1: "Integer Overflow"
+    2: "Inaccurate compiler design"
+    3: "Wrong data types"
+    4: "Value is correct since the negative sign can be omitted in certain conditions"
+    purpose: screening
+    correct_answer: [1, 3]
+  5:
+    column: "q5"
+    response_type: single-choice
+    values: [1, 2, 3, 4]
+    prompt: "Choose the answer that best fits the definition of a recursive function."
+    1: "A function that does not have a return value"
+    2: "A function that can be called from other functions"
+    3: "A function that calls itself"
+    4: "A function that does not require any inputs"
+    purpose: screening
+    correct_answer: 3
+  6:
+    column: "q6"
+    response_type: single-choice
+    values: [1, 2]
+    prompt: "Do you have a GitHub or Gitlab account?"
+    1: "Yes"
+    2: "No"
+    purpose: screening
+    correct_answer: 1
+  7:
+    column: "q7"
+    response_type: single-choice
+    values: [1, 2]
+    prompt: "Have you ever submitted a pull request to any open-source project?"
+    1: "Yes"
+    2: "No"
+    purpose: demographic
+    correct_answer: null
+  8:
+    column: "q8"
+    response_type: single-choice
+    values: [1, 2]
+    prompt: "Have you ever reviewed pull requests on any open-source project?"
+    1: "Yes"
+    2: "No"
+    purpose: demographic
+    correct_answer: null
+  9:
+    column: "q9"
+    response_type: single-choice
+    values: [1, 2, 3, 4, 5, 6]
+    prompt: "How often do you collaborate with repositories on Github, Gitlab, Bitbucket, etc?"
+    1: "At least once a day"
+    2: "At least once a week"
+    3: "At least once a month"
+    4: "At least once every six months"
+    5: "At least once a year"
+    6: "Never"
+    purpose: demographic
+    correct_answer: null
+  10:
+    column: "q10"
+    response_type: single-choice
+    values: [1, 2, 3, 4]
+    prompt: "An engine is to an airplane as ______ is to Github/Gitlab."
+    1: "Terminal"
+    2: "Git"
+    3: "Browser"
+    4: "Algorithm"
+    purpose: screening
+    correct_answer: 2
+  11:
+    column: "q11"
+    response_type: single-choice
+    values: [1, 2, 3]
+    prompt: "Choose the answer that best fits the definition of a pull request"
+    1: "A software change in the original repository where all forked repositories are asked to pull it"
+    2: "A request was emailed to someone to send their changes so the maintainer can pull them into the main branch"
+    3: "A software change that others have to review, then pull into the main branch"
+    purpose: screening
+    correct_answer: 3
+  12:
+    column: "q12"
+    response_type: open-ended
+    values: null
+    prompt: "Have you ever interacted with a bot in an open-source project? if yes, please enter the name of at least one of these bots."
+    purpose: demographic
+    correct_answer: null
+  13:
+    column: "q13"
+    response_type: open-ended
+    values: null
+    prompt: "What is a Bot? Briefly describe or provide a definition."
+    purpose: demographic
+    correct_answer: null
+  14:
+    column: "q14"
+    response_type: single-choice
+    values: [1, 2, 3, 4, 5]
+    prompt: "To which gender identity do you most identify"
+    1: "Male"
+    2: "Female"
+    3: "Non-binary"
+    4: "Other"
+    5: "Prefer not to say"
+    purpose: demographic
+    correct_answer: null
+  15:
+    column: "q15"
+    response_type: single-choice
+    values: [1, 2, 3, 4, 5, 6, 7]
+    prompt: "How old are you?"
+    1: "Under 18"
+    2: "18-24"
+    3: "25-34"
+    4: "35-44"
+    5: "45-54"
+    6: "55-64"
+    7: "65+"
+    purpose: demographic
+    correct_answer: null
+  16:
+    column: "q16"
+    response_type: open-ended
+    values: null
+    prompt: "What is your profession?"
+    purpose: demographic
+    correct_answer: null
+  17:
+    column: "q17"
+    response_type: single-choice
+    values: [1, 2, 3, 4]
+    prompt: "How many years of experience do you have in your profession?"
+    1: "Less than one year"
+    2: "One to three years"
+    3: "Three to five years"
+    4: "More than five years"
+    purpose: demographic
+    correct_answer: null
+scenarios:
+  values: [1, 2, 3, 4]
+  1: # scenario 1
+    column: "sc1_answer"
+    reason_column: "sc1_reason" # columns name for a participant's explanation. Stored in a String 
+    response_type: single-choice
+    values: [1, 2, 3]
+    variable: autonomy # it's one of (autonomy, persona)
+    context: pr
+    constant: factual # it's one of (factual, personable, reactive, proactive)
+    1: proactive
+    2: neutral
+    3: reactive
+  2: # scenario 2
+    column: "sc2_answer"
+    reason_column: "sc2_reason" # columns name for a participant's explanation. Stored in a String 
+    response_type: single-choice
+    values: [1, 2, 3]
+    variable: autonomy # it's one of (autonomy, persona)
+    context: pr
+    constant: personable # it's one of (factual, personable, reactive, proactive)
+    1: reactive
+    2: neutral
+    3: proactive
+  3: # scenario 3
+    column: "sc3_answer"
+    reason_column: "sc3_reason" # columns name for a participant's explanation. Stored in a String 
+    response_type: single-choice
+    values: [1, 2, 3]
+    variable: persona # it's one of (autonomy, persona)
+    context: check
+    constant: reactive # it's one of (factual, personable, reactive, proactive)
+    1: factual
+    2: neutral
+    3: personable
+  4: # scenario 4
+    column: "sc3_answer"
+    reason_column: "sc4_reason" # columns name for a participant's explanation. Stored in a String 
+    response_type: single-choice
+    values: [1, 2, 3]
+    variable: persona # it's one of (autonomy, persona)
+    context: check
+    constant: proactive # it's one of (factual, personable, reactive, proactive)
+    1: personable
+    2: neutral
+    3: factual
+# metadata object contains mapping between column names and their purpose
+metadata:
+  ref_id: "a 16-character alphanumerical unique string used by bot-study.ca database to uniformly identify all participants"
+  user_login_date: "date time string"
+  user_scenario_combination: "order of the scenarios displayed to the user. Exactly contains four integers separated by hyphen. Example:  3-2-4-1"
+  user_source: "It's either 'prolific' or empty. Empty fields represent Students"
+  user_device: "one of (desktop, smartphone, tablet)"
+  prolific_id: "A 24-character alphanumerical ananomyzed unique string for prolific participants"
+  prolific_study: "A 24-character alphanumerical ananomyzed unique string for each prolific study"
+  time_taken: "Float. time taken reported by prolific.co platform in seconds"
+  age: "Integer. reported by prolific.co"
+  residence_country: "String. reported by prolific.co"

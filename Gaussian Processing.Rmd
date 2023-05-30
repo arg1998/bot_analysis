@@ -1,0 +1,128 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+renv::activate()
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(brms)
+library(stringr)
+library(glue)
+library(ggplot2)
+library(corrplot)
+library(kableExtra)
+library(caret)
+library(kernlab)
+
+library(dplyr)
+# install.packages("devtools") # unless you have it already
+library(devtools)
+# install_github("jtextor/dagitty/r")
+theme_set(theme_default())
+# set rstan options
+rstan::rstan_options(auto_write = TRUE)
+options(mc.cores = parallel::detectCores())
+```
+
+# Data Transformation
+
+```{r}
+
+
+df <- read.csv("thesis/GLM Dataset.csv")
+
+# transform ordinal variables to numeric
+df$YrsExperience <- as.numeric(factor(df$YrsExperience, levels = c("<1 year", "1-3 years", "3-5 years", ">5 years")))
+df$PRActivity <- as.numeric(factor(df$PRActivity, levels = c("Novice", "Intermediate", "Expert")))
+df$GitHubActivity <- as.numeric(factor(df$GitHubActivity, levels = c("Infrequent", "Intermediate", "Experienced")))
+df$BotExperience <- as.numeric(factor(df$BotExperience, levels = c("Inexperienced", "Intermediate", "Experienced")))
+
+# transform categorical variables to numeric
+for(scenario in c("ScenarioChoice1_Autonomy", "ScenarioChoice2_Autonomy")) {
+
+  df[[scenario]] <- factor(recode(df[[scenario]],
+                                     "Proactive" = "1", 
+                                     "Neutral" = "2",
+                                     "Reactive" = "3"),
+                              levels=c("1","2","3"),ordered = T)
+}
+for(scenario in c("ScenarioChoice3_Persona", "ScenarioChoice4_Persona")) {
+  df[[scenario]] <- factor(recode(df[[scenario]],
+                                     "Factual" = "1", 
+                                     "Neutral" = "2",
+                                     "Personable" = "3"),
+                              levels=c("1","2","3"),ordered = T)
+}
+
+df$ScenarioChoice1_Autonomy <- as.numeric(df$ScenarioChoice1_Autonomy)
+df$ScenarioChoice2_Autonomy <- as.numeric(df$ScenarioChoice2_Autonomy)
+df$ScenarioChoice3_Persona <- as.numeric(df$ScenarioChoice3_Persona)
+df$ScenarioChoice4_Persona <- as.numeric(df$ScenarioChoice4_Persona)
+
+
+```
+
+# Model Descriptors 
+
+```{r}
+m1_sc1 = 'ScenarioChoice1_Autonomy ~ GitHubActivity'
+m2_sc1 = 'ScenarioChoice1_Autonomy ~ BotExperience + GitHubActivity + PRActivity + YrsExperience' # only technical 
+m3_sc1 = 'ScenarioChoice1_Autonomy ~ ScenarioChoice3_Persona' # answer to SC3 (persona)
+
+m1_sc2 = 'ScenarioChoice2_Autonomy ~ GitHubActivity'
+m2_sc2 = 'ScenarioChoice2_Autonomy ~ BotExperience + GitHubActivity + PRActivity + YrsExperience' # only technical 
+m3_sc2 = 'ScenarioChoice2_Autonomy ~ ScenarioChoice3_Persona' # answer to SC3 (persona)
+
+m1_sc3 = 'ScenarioChoice3_Persona ~ GitHubActivity'
+m2_sc3 = 'ScenarioChoice3_Persona ~ BotExperience + GitHubActivity + PRActivity + YrsExperience' # only technical 
+m3_sc3 = 'ScenarioChoice3_Persona ~ ScenarioChoice1_Autonomy' # answer to SC3 (autonomy)
+
+m1_sc4 = 'ScenarioChoice4_Persona ~ GitHubActivity'
+m2_sc4 = 'ScenarioChoice4_Persona ~ BotExperience + GitHubActivity + PRActivity + YrsExperience' # only technical 
+m3_sc4 = 'ScenarioChoice4_Persona ~ ScenarioChoice1_Autonomy' # answer to SC4 (autonomy)
+
+```
+
+# Gaussian Processing
+
+we perform k-fold with `caret` package and create a training control session. then feed the k-folded dataset into GP.
+
+```{r}
+set.seed(123)
+
+train_indices <- sample(1:nrow(df), nrow(df)*0.7)
+train_data <- df[train_indices,]
+test_data <- df[-train_indices,]
+
+gpc_model_m1_sc1 <- gausspr(as.formula(m1_sc1), data = train_data, kernel = "rbfdot", kpar = list(sigma = 0.05))
+
+glue("\n\n\n\n###############################################################\n\n\n\n")
+print(gpc_model_m1_sc1)
+glue("\n\n\n\n###############################################################\n\n\n\n")
+print(predict(gpc_model_m1_sc1, test_data))
+
+```
+
+```{r}
+
+# Specify the columns you want to preprocess
+columns_to_preprocess <- c("GitHubActivity", "BotExperience", "PRActivity", "YrsExperience", "ScenarioChoice1_Autonomy", "ScenarioChoice2_Autonomy", "ScenarioChoice3_Persona", "ScenarioChoice4_Persona")
+
+# Define the preprocessing methods
+preProc <- preProcess(df[,columns_to_preprocess], method = c("center", "scale"))
+
+# Apply the preprocessing methods to the specified columns
+df[,columns_to_preprocess] <- predict(preProc, df[,columns_to_preprocess])
+
+
+```
+
+```{r}
+control <- trainControl(method = "cv", number = 7)
+gpc_model <- train(as.formula(m1_sc1), data = df, method = "bayesglm", trControl = control)
+print(gpc_model)
+predict(gpc_model, test_data)
+
+```
