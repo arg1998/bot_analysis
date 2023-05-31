@@ -92,7 +92,7 @@ we perform k-fold with `caret` package and create a training control session. th
 ```{r}
 set.seed(123)
 
-train_indices <- sample(1:nrow(df), nrow(df)*0.7)
+train_indices <- sample(1:nrow(df), nrow(df)*0.9)
 train_data <- df[train_indices,]
 test_data <- df[-train_indices,]
 
