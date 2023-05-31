@@ -19,8 +19,9 @@ Also, I wasn't able to run any RStan based library (including BRM and BRMS libra
 
 ## Model Verification Log
 
-Detailed output of the models can be found on (Model Verification Log )[Model Verification Log.md] file.
+
+Detailed output of the models can be found on [Model Verification Log](Model%20Verification%20Log.md) file.
 
 ## Model Interpretation:
 
-Due to large amount of data, I used ChatGPT to interpret the above outputs where you can find in [Model Interpretations](Model Interpretations.md) file.
+Due to large amount of data, I used ChatGPT to interpret the above outputs where you can find in [Model Interpretations](Model%20Interpretations.md) file.
