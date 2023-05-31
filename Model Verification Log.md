@@ -30,9 +30,11 @@ Coefficients:
 | (Intercept)    | 1.1268   | 0.2467     | 4.567   | 2.9e-05     |
 | GitHubActivity | -0.2528  | 0.1050     | -2.407  | 0.0196      |
 
-    Residual standard error: 0.4811 on 54 degrees of freedom
-    Multiple R-squared:  0.09687,   Adjusted R-squared:  0.08014 
-    F-statistic: 5.792 on 1 and 54 DF,  p-value: 0.01955
+```         
+Residual standard error: 0.4811 on 54 degrees of freedom
+Multiple R-squared:  0.09687,   Adjusted R-squared:  0.08014 
+F-statistic: 5.792 on 1 and 54 DF,  p-value: 0.01955
+```
 
 **Proactive**
 
@@ -49,9 +51,11 @@ Coefficients:
 | (Intercept)    | -0.29957 | 0.23028    | -1.301  | 0.19880     |
 | GitHubActivity | 0.28170  | 0.09803    | 2.874   | 0.00579     |
 
-    Residual standard error: 0.449 on 54 degrees of freedom
-    Multiple R-squared: 0.1326, Adjusted R-squared: 0.1166
-    F-statistic: 8.258 on 1 and 54 DF, p-value: 0.005791
+```         
+Residual standard error: 0.449 on 54 degrees of freedom
+Multiple R-squared: 0.1326, Adjusted R-squared: 0.1166
+F-statistic: 8.258 on 1 and 54 DF, p-value: 0.005791
+```
 
 #### Scenario 2 (Autonomy)
 
@@ -77,9 +81,11 @@ Coefficients:
 | (Intercept)    | 0.8026   | 0.2572     | 3.120   | 0.0029      |
 | GitHubActivity | -0.1098  | 0.1095     | -1.003  | 0.3205      |
 
-    Residual standard error: 0.5016 on 54 degrees of freedom
-    Multiple R-squared: 0.01827, Adjusted R-squared: 9.416e-05
-    F-statistic: 1.005 on 1 and 54 DF, p-value: 0.3205
+```         
+Residual standard error: 0.5016 on 54 degrees of freedom
+Multiple R-squared: 0.01827, Adjusted R-squared: 9.416e-05
+F-statistic: 1.005 on 1 and 54 DF, p-value: 0.3205
+```
 
 **Proactive**
 
@@ -96,9 +102,11 @@ Coefficients:
 | (Intercept)    | -0.1626  | 0.2232     | -0.728  | 0.4695      |
 | GitHubActivity | 0.1898   | 0.0950     | 1.998   | 0.0508      |
 
-    Residual standard error: 0.4352 on 54 degrees of freedom
-    Multiple R-squared: 0.06882, Adjusted R-squared: 0.05157
-    F-statistic: 3.991 on 1 and 54 DF, p-value: 0.0508
+```         
+Residual standard error: 0.4352 on 54 degrees of freedom
+Multiple R-squared: 0.06882, Adjusted R-squared: 0.05157
+F-statistic: 3.991 on 1 and 54 DF, p-value: 0.0508
+```
 
 #### Scenario 3 (Persona)
 
@@ -124,9 +132,11 @@ Coefficients:
 | (Intercept)    | 0.17617  | 0.22034    | 0.800   | 0.427       |
 | GitHubActivity | 0.02468  | 0.09380    | 0.263   | 0.793       |
 
-    Residual standard error: 0.4297 on 54 degrees of freedom
-    Multiple R-squared: 0.00128, Adjusted R-squared: -0.01721
-    F-statistic: 0.06923 on 1 and 54 DF, p-value: 0.7935
+```         
+Residual standard error: 0.4297 on 54 degrees of freedom
+Multiple R-squared: 0.00128, Adjusted R-squared: -0.01721
+F-statistic: 0.06923 on 1 and 54 DF, p-value: 0.7935
+```
 
 **Personable**
 
@@ -143,9 +153,11 @@ Coefficients:
 | (Intercept)    | 0.74468  | 0.24002    | 3.103   | 0.00305     |
 | GitHubActivity | -0.02128 | 0.10218    | -0.208  | 0.83584     |
 
-    Residual standard error: 0.468 on 54 degrees of freedom
-    Multiple R-squared: 0.0008023, Adjusted R-squared: -0.0177
-    F-statistic: 0.04336 on 1 and 54 DF, p-value: 0.8358
+```         
+Residual standard error: 0.468 on 54 degrees of freedom
+Multiple R-squared: 0.0008023, Adjusted R-squared: -0.0177
+F-statistic: 0.04336 on 1 and 54 DF, p-value: 0.8358
+```
 
 #### Scenario 4 (Persona)
 
@@ -171,9 +183,11 @@ Coefficients:
 | (Intercept)    | 0.42808  | 0.25690    | 1.666   | 0.101       |
 | GitHubActivity | -0.00766 | 0.10937    | -0.070  | 0.944       |
 
-    Residual standard error: 0.501 on 54 degrees of freedom
-    Multiple R-squared: 9.082e-05, Adjusted R-squared: -0.01843
-    F-statistic: 0.004905 on 1 and 54 DF, p-value: 0.9444
+```         
+Residual standard error: 0.501 on 54 degrees of freedom
+Multiple R-squared: 9.082e-05, Adjusted R-squared: -0.01843
+F-statistic: 0.004905 on 1 and 54 DF, p-value: 0.9444
+```
 
 **Personable**
 
@@ -190,9 +204,11 @@ Coefficients:
 | (Intercept)    | 0.33787  | 0.26011    | 1.299   | 0.199       |
 | GitHubActivity | 0.07149  | 0.11073    | 0.646   | 0.521       |
 
-    Residual standard error: 0.5072 on 54 degrees of freedom
-    Multiple R-squared: 0.00766, Adjusted R-squared: -0.01072
-    F-statistic: 0.4168 on 1 and 54 DF, p-value: 0.5213
+```         
+Residual standard error: 0.5072 on 54 degrees of freedom
+Multiple R-squared: 0.00766, Adjusted R-squared: -0.01072
+F-statistic: 0.4168 on 1 and 54 DF, p-value: 0.5213
+```
 
 ### Model 2
 
@@ -228,9 +244,11 @@ Coefficients:
 | PRActivity     | -0.11061 | 0.13175    | -0.840  | 0.4051      |
 | YrsExperience  | -0.04135 | 0.06963    | -0.594  | 0.5552      |
 
-    Residual standard error: 0.4892 on 51 degrees of freedom
-    Multiple R-squared: 0.1182, Adjusted R-squared: 0.04903
-    F-statistic: 1.709 on 4 and 51 DF, p-value: 0.1624
+```         
+Residual standard error: 0.4892 on 51 degrees of freedom
+Multiple R-squared: 0.1182, Adjusted R-squared: 0.04903
+F-statistic: 1.709 on 4 and 51 DF, p-value: 0.1624
+```
 
 **Proactive**
 
@@ -250,9 +268,11 @@ Coefficients:
 | PRActivity     | 0.16026  | 0.12190    | 1.315   | 0.1945      |
 | YrsExperience  | 0.03377  | 0.06442    | 0.524   | 0.6024      |
 
-    Residual standard error: 0.4526 on 51 degrees of freedom
-    Multiple R-squared: 0.1678, Adjusted R-squared: 0.1025
-    F-statistic: 2.571 on 4 and 51 DF, p-value: 0.0488
+```         
+Residual standard error: 0.4526 on 51 degrees of freedom
+Multiple R-squared: 0.1678, Adjusted R-squared: 0.1025
+F-statistic: 2.571 on 4 and 51 DF, p-value: 0.0488
+```
 
 #### Scenario 2 (Autonomy)
 
@@ -284,9 +304,11 @@ Coefficients:
 | PRActivity     | 0.001873  | 0.137973   | 0.014   | 0.989       |
 | YrsExperience  | 0.022648  | 0.072916   | 0.311   | 0.757       |
 
-    Residual standard error: 0.5123 on 51 degrees of freedom
-    Multiple R-squared: 0.03298, Adjusted R-squared: -0.04287
-    F-statistic: 0.4348 on 4 and 51 DF, p-value: 0.7828
+```         
+Residual standard error: 0.5123 on 51 degrees of freedom
+Multiple R-squared: 0.03298, Adjusted R-squared: -0.04287
+F-statistic: 0.4348 on 4 and 51 DF, p-value: 0.7828
+```
 
 **Proactive**
 
@@ -306,9 +328,11 @@ Coefficients:
 | PRActivity     | 0.005216  | 0.120063   | 0.043   | 0.9655      |
 | YrsExperience  | -0.029922 | 0.063451   | -0.472  | 0.6392      |
 
-    Residual standard error: 0.4458 on 51 degrees of freedom
-    Multiple R-squared: 0.07722, Adjusted R-squared: 0.004848
-    F-statistic: 1.067 on 4 and 51 DF, p-value: 0.3825
+```         
+Residual standard error: 0.4458 on 51 degrees of freedom
+Multiple R-squared: 0.07722, Adjusted R-squared: 0.004848
+F-statistic: 1.067 on 4 and 51 DF, p-value: 0.3825
+```
 
 #### Scenario 3 (Persona)
 
@@ -340,9 +364,11 @@ Coefficients:
 | PRActivity     | 0.020369  | 0.118892   | 0.171   | 0.865       |
 | YrsExperience  | 0.021693  | 0.062832   | 0.345   | 0.731       |
 
-    Residual standard error: 0.4414 on 51 degrees of freedom
-    Multiple R-squared: 0.004489, Adjusted R-squared: -0.07359
-    F-statistic: 0.05749 on 4 and 51 DF, p-value: 0.9937
+```         
+Residual standard error: 0.4414 on 51 degrees of freedom
+Multiple R-squared: 0.004489, Adjusted R-squared: -0.07359
+F-statistic: 0.05749 on 4 and 51 DF, p-value: 0.9937
+```
 
 **Personable**
 
@@ -362,9 +388,11 @@ Coefficients:
 | PRActivity     | 0.01247  | 0.12962    | 0.096   | 0.924       |
 | YrsExperience  | -0.01747 | 0.06850    | -0.255  | 0.800       |
 
-    Residual standard error: 0.4812 on 51 degrees of freedom
-    Multiple R-squared: 0.002375, Adjusted R-squared: -0.07587
-    F-statistic: 0.03035 on 4 and 51 DF, p-value: 0.9982
+```         
+Residual standard error: 0.4812 on 51 degrees of freedom
+Multiple R-squared: 0.002375, Adjusted R-squared: -0.07587
+F-statistic: 0.03035 on 4 and 51 DF, p-value: 0.9982
+```
 
 #### Scenario 4 (Persona)
 
@@ -396,9 +424,11 @@ Coefficients:
 | PRActivity     | -0.009265 | 0.134902   | -0.069  | 0.9455      |
 | YrsExperience  | -0.028262 | 0.071293   | -0.396  | 0.6934      |
 
-    Residual standard error: 0.5009 on 51 degrees of freedom
-    Multiple R-squared: 0.05605, Adjusted R-squared: -0.01798
-    F-statistic: 0.7571 on 4 and 51 DF, p-value: 0.558
+```         
+Residual standard error: 0.5009 on 51 degrees of freedom
+Multiple R-squared: 0.05605, Adjusted R-squared: -0.01798
+F-statistic: 0.7571 on 4 and 51 DF, p-value: 0.558
+```
 
 **Personable**
 
@@ -418,9 +448,11 @@ Coefficients:
 | PRActivity     | 0.03636  | 0.13879    | 0.262   | 0.794       |
 | YrsExperience  | 0.04207  | 0.07335    | 0.574   | 0.569       |
 
-    Residual standard error: 0.5153 on 51 degrees of freedom
-    Multiple R-squared: 0.03269, Adjusted R-squared: -0.04318
-    F-statistic: 0.4309 on 4 and 51 DF, p-value: 0.7857
+```         
+Residual standard error: 0.5153 on 51 degrees of freedom
+Multiple R-squared: 0.03269, Adjusted R-squared: -0.04318
+F-statistic: 0.4309 on 4 and 51 DF, p-value: 0.7857
+```
 
 ### Model 3
 
@@ -451,9 +483,11 @@ Coefficients:
 | Persona = Factual    | 0.26923  | 0.28373    | 0.949   | 0.347       |
 | Persona = Personable | -0.01282 | 0.26053    | -0.049  | 0.961       |
 
-    Residual standard error: 0.4962 on 53 degrees of freedom
-    Multiple R-squared: 0.05694, Adjusted R-squared: 0.02135
-    F-statistic: 1.6 on 2 and 53 DF, p-value: 0.2115
+```         
+Residual standard error: 0.4962 on 53 degrees of freedom
+Multiple R-squared: 0.05694, Adjusted R-squared: 0.02135
+F-statistic: 1.6 on 2 and 53 DF, p-value: 0.2115
+```
 
 **Proactive**
 
@@ -471,9 +505,11 @@ Coefficients:
 | Persona = Factual   | -0.2692  | 0.2752     | -0.978  | 0.3324      |
 | Persona =Personable | -0.1410  | 0.2527     | -0.558  | 0.5792      |
 
-    Residual standard error: 0.4814 on 53 degrees of freedom
-    Multiple R-squared: 0.02163, Adjusted R-squared: -0.01529
-    F-statistic: 0.5858 on 2 and 53 DF, p-value: 0.5602
+```         
+Residual standard error: 0.4814 on 53 degrees of freedom
+Multiple R-squared: 0.02163, Adjusted R-squared: -0.01529
+F-statistic: 0.5858 on 2 and 53 DF, p-value: 0.5602
+```
 
 #### Scenario 2 (Autonomy)
 
@@ -500,9 +536,11 @@ Coefficients:
 | ScenarioChoice3_PersonaScenarioChoice3_PersonaFactual    | 0.19231  | 0.28871    | 0.666   | 0.5082      |
 | ScenarioChoice3_PersonaScenarioChoice3_PersonaPersonable | 0.01282  | 0.26510    | 0.048   | 0.9616      |
 
-    Residual standard error: 0.5049 on 53 degrees of freedom
-    Multiple R-squared: 0.02359, Adjusted R-squared: -0.01326
-    F-statistic: 0.6402 on 2 and 53 DF, p-value: 0.5312
+```         
+Residual standard error: 0.5049 on 53 degrees of freedom
+Multiple R-squared: 0.02359, Adjusted R-squared: -0.01326
+F-statistic: 0.6402 on 2 and 53 DF, p-value: 0.5312
+```
 
 **Proactive**
 
@@ -520,9 +558,11 @@ Coefficients:
 | Persona = Factual    | 0.05769  | 0.25995    | 0.222   | 0.825       |
 | Persona = Personable | 0.00641  | 0.23869    | 0.027   | 0.979       |
 
-    Residual standard error: 0.4546 on 53 degrees of freedom
-    Multiple R-squared: 0.00246, Adjusted R-squared: -0.03518
-    F-statistic: 0.06535 on 2 and 53 DF, p-value: 0.9368
+```         
+Residual standard error: 0.4546 on 53 degrees of freedom
+Multiple R-squared: 0.00246, Adjusted R-squared: -0.03518
+F-statistic: 0.06535 on 2 and 53 DF, p-value: 0.9368
+```
 
 #### Scenario 3 (Persona)
 
@@ -549,9 +589,11 @@ Coefficients:
 | Autonomy = Reactive  | 3.226e-01  | 1.868e-01  | 1.727   | 0.0901      |
 | Autonomy = Proactive | 1.579e-01  | 1.962e-01  | 0.805   | 0.4245      |
 
-    Residual standard error: 0.4189 on 53 degrees of freedom
-    Multiple R-squared: 0.06829, Adjusted R-squared: 0.03313
-    F-statistic: 1.942 on 2 and 53 DF, p-value: 0.1535
+```         
+Residual standard error: 0.4189 on 53 degrees of freedom
+Multiple R-squared: 0.06829, Adjusted R-squared: 0.03313
+F-statistic: 1.942 on 2 and 53 DF, p-value: 0.1535
+```
 
 **Personable**
 
@@ -569,9 +611,11 @@ Coefficients:
 | Autonomy = Reactive  | -0.3871  | 0.2036     | -1.902  | 0.0626      |
 | Autonomy = Proactive | -0.2632  | 0.2137     | -1.231  | 0.2236      |
 
-    Residual standard error: 0.4564 on 53 degrees of freedom
-    Multiple R-squared: 0.06759, Adjusted R-squared: 0.03241
-    F-statistic: 1.921 on 2 and 53 DF, p-value: 0.1565
+```         
+Residual standard error: 0.4564 on 53 degrees of freedom
+Multiple R-squared: 0.06759, Adjusted R-squared: 0.03241
+F-statistic: 1.921 on 2 and 53 DF, p-value: 0.1565
+```
 
 #### Scenario 4 (Persona)
 
@@ -600,9 +644,11 @@ Coefficients:
 | Autonomy = Reactive  | -0.04839 | 0.22328    | -0.217  | 0.8293      |
 | Autonomy = Proactive | -0.18421 | 0.23444    | -0.786  | 0.4355      |
 
-    Residual standard error: 0.5006 on 53 degrees of freedom
-    Multiple R-squared: 0.01999, Adjusted R-squared: -0.017
-    F-statistic: 0.5404 on 2 and 53 DF, p-value: 0.5857
+```         
+Residual standard error: 0.5006 on 53 degrees of freedom
+Multiple R-squared: 0.01999, Adjusted R-squared: -0.017
+F-statistic: 0.5404 on 2 and 53 DF, p-value: 0.5857
+```
 
 **Personable**
 
@@ -620,9 +666,11 @@ Coefficients:
 | Autonomy = Reactive  | 0.1505   | 0.2268     | 0.664   | 0.510       |
 | Autonomy = Proactive | 0.2456   | 0.2381     | 1.031   | 0.307       |
 
-    Residual standard error: 0.5085 on 53 degrees of freedom
-    Multiple R-squared: 0.02094, Adjusted R-squared: -0.01601
-    F-statistic: 0.5668 on 2 and 53 DF, p-value: 0.5708
+```         
+Residual standard error: 0.5085 on 53 degrees of freedom
+Multiple R-squared: 0.02094, Adjusted R-squared: -0.01601
+F-statistic: 0.5668 on 2 and 53 DF, p-value: 0.5708
+```
 
 ## Generalized Linear Modelling (GLM)
 
@@ -645,16 +693,20 @@ Coefficients:
 | (Intercept)    | 3.7421   | 1.3755     | 2.721   | 0.00652     |
 | GitHubActivity | -1.3849  | 0.5555     | -2.493  | 0.01266     |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 66.406  on 49  degrees of freedom
-    Residual deviance: 59.047 on 48 degrees of freedom AIC: 63.047
-    AIC: 63.047
-    Number of Fisher Scoring iterations: 3
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 66.406  on 49  degrees of freedom
+Residual deviance: 59.047 on 48 degrees of freedom AIC: 63.047
+AIC: 63.047
+Number of Fisher Scoring iterations: 3
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice1_Autonomy
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice1_Autonomy
+```
 
 Terms added sequentially (first to last)
 
@@ -678,16 +730,20 @@ Coefficients:
 | (Intercept)    | 3.0019   | 1.4132     | 2.124   | 0.0337 |
 | GitHubActivity | -0.9606  | 0.5654     | -1.699  | 0.0893 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 58.086 on 45 degrees of freedom
-    Residual deviance: 54.910 on 44 degrees of freedom 
-    AIC: 58.91
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 58.086 on 45 degrees of freedom
+Residual deviance: 54.910 on 44 degrees of freedom 
+AIC: 58.91
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice2_Autonomy
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice2_Autonomy
+```
 
 Terms added sequentially (first to last)
 
@@ -711,16 +767,20 @@ Coefficients:
 | (Intercept)    | -1.4014  | 1.2295     | -1.140  | 0.254 |
 | GitHubActivity | 0.1327   | 0.5172     | 0.257   | 0.798 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 58.483 on 51 degrees of freedom
-    Residual deviance: 58.417 on 50 degrees of freedom
-    AIC: 62.417
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 58.483 on 51 degrees of freedom
+Residual deviance: 58.417 on 50 degrees of freedom
+AIC: 62.417
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice3_Persona
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice3_Persona
+```
 
 Terms added sequentially (first to last)
 
@@ -744,16 +804,20 @@ Coefficients:
 | (Intercept)    | 0.1843   | 1.1052     | 0.167   | 0.868 |
 | GitHubActivity | -0.1663  | 0.4670     | -0.356  | 0.722 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 70.210 on 50 degrees of freedom
-    Residual deviance: 70.083 on 49 degrees of freedom
-    AIC: 74.083
-    Number of Fisher Scoring iterations: 3
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 70.210 on 50 degrees of freedom
+Residual deviance: 70.083 on 49 degrees of freedom
+AIC: 74.083
+Number of Fisher Scoring iterations: 3
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice4_Persona
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice4_Persona
+```
 
 Terms added sequentially (first to last)
 
@@ -784,16 +848,20 @@ Coefficients:
 | PRActivity     | -0.6891  | 0.6004     | -1.148  | 0.2511 |
 | YrsExperience  | -0.1865  | 0.3416     | -0.546  | 0.5851 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 66.406 on 49 degrees of freedom
-    Residual deviance: 57.291 on 45 degrees of freedom
-    AIC: 67.291
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 66.406 on 49 degrees of freedom
+Residual deviance: 57.291 on 45 degrees of freedom
+AIC: 67.291
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice1_Autonomy
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice1_Autonomy
+```
 
 Terms added sequentially (first to last)
 
@@ -823,16 +891,20 @@ Coefficients:
 | PRActivity     | -0.03494 | 0.59838    | -0.058  | 0.953 |
 | YrsExperience  | 0.14577  | 0.34645    | 0.421   | 0.674 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 58.086 on 45 degrees of freedom
-    Residual deviance: 54.571 on 41 degrees of freedom
-    AIC: 64.571
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 58.086 on 45 degrees of freedom
+Residual deviance: 54.571 on 41 degrees of freedom
+AIC: 64.571
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice2_Autonomy
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice2_Autonomy
+```
 
 Terms added sequentially (first to last)
 
@@ -862,16 +934,20 @@ Coefficients:
 | PRActivity     | 0.06624  | 0.61928    | 0.107   | 0.915 |
 | YrsExperience  | 0.11200  | 0.32781    | 0.342   | 0.733 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 58.483 on 51 degrees of freedom
-    Residual deviance: 58.282 on 47 degrees of freedom
-    AIC: 68.282
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 58.483 on 51 degrees of freedom
+Residual deviance: 58.282 on 47 degrees of freedom
+AIC: 68.282
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice3_Persona
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice3_Persona
+```
 
 Terms added sequentially (first to last)
 
@@ -901,16 +977,20 @@ Coefficients:
 | PRActivity     | -0.08900 | 0.56423    | -0.158  | 0.875 |
 | YrsExperience  | -0.15134 | 0.29499    | -0.513  | 0.608 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 70.210 on 50 degrees of freedom
-    Residual deviance: 67.705 on 46 degrees of freedom
-    AIC: 77.705
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 70.210 on 50 degrees of freedom
+Residual deviance: 67.705 on 46 degrees of freedom
+AIC: 77.705
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice4_Persona
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice4_Persona
+```
 
 Terms added sequentially (first to last)
 
@@ -942,16 +1022,20 @@ Coefficients:
 | Persona = Factual    | 1.204      | 1.197      | 1.006   | 0.315 |
 | Persona = Personable | 0.3054     | 1.060      | 0.288   | 0.773 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 66.406 on 49 degrees of freedom
-    Residual deviance: 64.578 on 47 degrees of freedom
-    AIC: 70.578
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 66.406 on 49 degrees of freedom
+Residual deviance: 64.578 on 47 degrees of freedom
+AIC: 70.578
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice1_Autonomy
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice1_Autonomy
+```
 
 Terms added sequentially (first to last)
 
@@ -976,16 +1060,20 @@ Coefficients:
 | Persona = Factual    | 1.178e-01 | 1.364e+00  | 0.086   | 0.931 |
 | Persona = Personable | 2.547e-15 | 1.285e+00  | 0.000   | 1.000 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 58.086 on 45 degrees of freedom
-    Residual deviance: 58.058 on 43 degrees of freedom
-    AIC: 64.058
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 58.086 on 45 degrees of freedom
+Residual deviance: 58.058 on 43 degrees of freedom
+AIC: 64.058
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice2_Autonomy
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice2_Autonomy
+```
 
 Terms added sequentially (first to last)
 
@@ -1012,16 +1100,20 @@ Coefficients:
 | Autonomy = Reactive  | 16.92    | 1615.10    | 0.010   | 0.992 |
 | Autonomy = Proactive | 16.03    | 1615.10    | 0.010   | 0.992 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 58.483 on 51 degrees of freedom
-    Residual deviance: 53.207 on 49 degrees of freedom
-    AIC: 59.207
-    Number of Fisher Scoring iterations: 16
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 58.483 on 51 degrees of freedom
+Residual deviance: 53.207 on 49 degrees of freedom
+AIC: 59.207
+Number of Fisher Scoring iterations: 16
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice3_Persona
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice3_Persona
+```
 
 Terms added sequentially (first to last)
 
@@ -1048,16 +1140,20 @@ Coefficients:
 | Autonomy = Reactive  | -0.4745  | 0.9856     | -0.481  | 0.630 |
 | Autonomy = Proactive | -1.0116  | 1.0445     | -0.969  | 0.333 |
 
-    (Dispersion parameter for binomial family taken to be 1)
-    Null deviance: 70.210 on 50 degrees of freedom
-    Residual deviance: 68.973 on 48 degrees of freedom
-    AIC: 74.973
-    Number of Fisher Scoring iterations: 4
+```         
+(Dispersion parameter for binomial family taken to be 1)
+Null deviance: 70.210 on 50 degrees of freedom
+Residual deviance: 68.973 on 48 degrees of freedom
+AIC: 74.973
+Number of Fisher Scoring iterations: 4
+```
 
 Analysis of Deviance Table
 
-    Model: binomial, link: logit
-    Response: ScenarioChoice4_Persona
+```         
+Model: binomial, link: logit
+Response: ScenarioChoice4_Persona
+```
 
 Terms added sequentially (first to last)
 
