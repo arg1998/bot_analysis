@@ -531,7 +531,7 @@ Residuals:
 Coefficients:
 
 |                                                          | Estimate | Std. Error | t value | Pr(\>\|t\|) |
-|----------------------------------------------------------|----------|------------|---------|-------------|
+|-------------------------------|----------|----------|----------|----------|
 | (Intercept)                                              | 0.50000  | 0.25247    | 1.980   | 0.0529      |
 | ScenarioChoice3_PersonaScenarioChoice3_PersonaFactual    | 0.19231  | 0.28871    | 0.666   | 0.5082      |
 | ScenarioChoice3_PersonaScenarioChoice3_PersonaPersonable | 0.01282  | 0.26510    | 0.048   | 0.9616      |
@@ -1086,7 +1086,6 @@ Terms added sequentially (first to last)
 
 Deviance Residuals:
 
-### Model: ScenarioChoice3_Persona
 
 | Min     | 1Q      | Median  | 3Q     | Max    |
 |---------|---------|---------|--------|--------|
@@ -1126,7 +1125,6 @@ Terms added sequentially (first to last)
 
 Deviance Residuals:
 
-### Model: ScenarioChoice4_Persona
 
 | Min     | 1Q      | Median  | 3Q     | Max    |
 |---------|---------|---------|--------|--------|
